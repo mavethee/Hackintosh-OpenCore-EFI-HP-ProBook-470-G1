@@ -1,7 +1,7 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
 ## Hackintosh-OpenCore-HP-ProBook-470-G1
-EFI premade of OpenCore bootloader for DELL-7567 is here!
+EFI premade of OpenCore bootloader for HP ProBook 470 G1 is here!
 
 ## Current version - OpenCore 0.6.3 (2nd November)
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
