@@ -15,7 +15,7 @@ https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3
 https://github.com/OpenIntelWireless/itlwm
 ### AppleALC (1.5.4):
 https://github.com/acidanthera/AppleALC
-### Broadcom (Optional, for people who replaced Intel with it):
+### Broadcom (Optional, for people who replaced Intel with it, use config-Broadcom.plist for it):
 https://github.com/acidanthera/BrcmPatchRAM/
 https://github.com/acidanthera/AirportBrcmFixup/
 ### IntelBluetoothFirmware (1.1.2):
