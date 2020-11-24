@@ -33,6 +33,7 @@ https://github.com/OpenIntelWireless/itlwm
 https://github.com/acidanthera/AppleALC
 ### Broadcom (Optional, for people who replaced Intel with it, use config-Broadcom.plist for it):
 https://github.com/acidanthera/BrcmPatchRAM/
+
 https://github.com/acidanthera/AirportBrcmFixup/
 ### IntelBluetoothFirmware (1.1.2):
 https://github.com/OpenIntelWireless/IntelBluetoothFirmware
