@@ -17,8 +17,8 @@ Delete all Brcm kexts from EFI/OC/Kexts and make a snapshot of
 config.plist in ProperTree and delete config-Broadcom.plist!
 
 ### If you use Broadcom: 
-- Delete all Intel kexts from EFI/OC/Kexts
-- Depending on macOS version, you're planning to use:
+Delete all Intel kexts from EFI/OC/Kexts
+-- Depending on macOS version, you're planning to use:
 * BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)
 * BrcmPatchRAM2 for 10.11-10.14
 * BrcmPatchRAM for 10.8-10.10
