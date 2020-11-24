@@ -22,6 +22,7 @@ config.plist in ProperTree and delete config-Broadcom.plist!
 * BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)
 * BrcmPatchRAM2 for 10.11-10.14
 * BrcmPatchRAM for 10.8-10.10
+
 And then, make a snapshot of config-Broadcom.plist in ProperTree and rename file to config.plist (delete/replace with existing one)!
 
 
