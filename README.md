@@ -33,7 +33,7 @@ And then, make a snapshot of config.plist in ProperTree!
 https://github.com/OpenIntelWireless/itlwm
 ### AppleALC (1.5.5):
 https://github.com/acidanthera/AppleALC
-### Broadcom (Optional, for people who replaced Intel with it, use config-Broadcom.plist for it):
+### Broadcom (Optional, for people who replaced Intel with it):
 https://github.com/acidanthera/BrcmPatchRAM/
 
 https://github.com/acidanthera/AirportBrcmFixup/
