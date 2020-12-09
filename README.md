@@ -14,7 +14,7 @@ EFI premade is done for people with Intel and Broadcom WiFi Bluetooth cards!
 
 ### If you use Intel:
 Delete all Brcm kexts from EFI/OC/Kexts and make a snapshot of
-config.plist in ProperTree and delete config-Broadcom.plist!
+config.plist in ProperTree!
 
 ### If you use Broadcom: 
 Delete all Intel kexts from EFI/OC/Kexts
