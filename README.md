@@ -13,8 +13,15 @@ https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.4
 EFI premade is done for people with Intel and Broadcom WiFi Bluetooth cards!
 
 ### If you use Intel:
-Delete all Brcm kexts from EFI/OC/Kexts and make a snapshot of
-config.plist in ProperTree!
+Delete all Brcm kexts from EFI/OC/Kexts, 
+Depending on macOS version, you're planning to use:
+* Airportitlwm_Big_Sur for macOS 11 Big Sur,
+* Airportitlwm_Catalina for macOS 10.15 Catalina,
+* Airportitlwm_Mojave for macOS 10.14 Mojave,
+* Airportitlwm_High_Sierra for macOS 10.13 High Sierra.
+After that rename chosen Airportitlwm kext to Airportitlwm.kext
+
+And then make a snapshot of config.plist in ProperTree!
 
 ### If you use Broadcom: 
 Delete all Intel kexts from EFI/OC/Kexts
