@@ -12,6 +12,19 @@ https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.4
 ## Important note:
 EFI premade is done for people with Intel and Broadcom WiFi Bluetooth cards!
 
+### SMBIOS:
+Present in repo SMBIOS is not purchased Apple's device but for own sake, I don't advice you to use it.
+...for own sake ;)
+
+To generate SMBIOS you can use:
+* OpenCore Configurator: 
+https://mackie100projects.altervista.org/download-opencore-configurator/
+* Clover Configurator:
+https://mackie100projects.altervista.org/download-clover-configurator/
+
+Tool doesn't matter really, you just need not valid or unused SMBIOS to copy-paste needed info.
+...if you wish to use iServices of course :)
+
 ### If you use Intel:
 Delete all Brcm kexts from EFI/OC/Kexts, 
 Depending on macOS version, you're planning to use:
