@@ -15,6 +15,8 @@ Since OC 0.6.5, I decided to switch to RELEASE version, if you expierience any i
 
 https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
 
+My main DELL-7567 fried so won't be able keep up to date this repo anymore,
+planning to get ThinkPad x240 and continue Hackintosh repos soon.
 
 ### SMBIOS:
 Present in repo SMBIOS is not purchased Apple's device but for own sake, I don't advice you to use it.
