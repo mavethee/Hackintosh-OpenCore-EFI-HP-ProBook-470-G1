@@ -3,20 +3,26 @@
 ## Hackintosh-OpenCore-HP-ProBook-470-G1
 EFI premade of OpenCore bootloader for HP ProBook 470 G1 is here!
 
-## Current version - OpenCore 0.6.5 (4th January)
+## Current version - OpenCore 0.6.7 (1st March)
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on HP ProBook 470 G1!
 
-https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.5
+https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.7
 
 ## Important note:
 EFI premade is done for people with Intel and Broadcom WiFi Bluetooth cards!
-Since OC 0.6.5, I decided to switch to RELEASE version, if you expierience any issues, switch to debug using Dortania's Guide:
+
+Keep in mind! For for me it's a bit weird I need to mention that. EFI is not everything, to prepare your USB with macOS installer you need to follow Dortania's Guide:
+https://dortania.github.io/OpenCore-Install-Guide/installer-guide/#making-the-installer
+(3 ways listed using either Windows, Linux or macOS)
+
+If you are not using NVMe SSDs, you don't need NVMeFix kext, delete it from Kexts!
+If you want to switch to RELEASE version, you can use Dortania's Guide here:
 
 https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
 
 My main DELL-7567 fried so won't be able keep up to date this repo anymore,
-planning to get ThinkPad x240 and continue Hackintosh repos soon.
+planning to get some Haswell machine in future and continue Hackintosh repos soon but well, I don't know how things will go! :)
 
 ### SMBIOS:
 Present in repo SMBIOS is not purchased Apple's device but for own sake, I don't advice you to use it.
@@ -55,35 +61,31 @@ And then, make a snapshot of config.plist in ProperTree!
 
 ## Credits:
 
-### Airportitlwm (1.1.0):
+### Airportitlwm (1.2.0):
 https://github.com/OpenIntelWireless/itlwm
-### AppleALC (1.5.6):
+### AppleALC (1.5.8):
 https://github.com/acidanthera/AppleALC
 ### Broadcom (Optional, for people who replaced Intel with it):
 https://github.com/acidanthera/BrcmPatchRAM/
 
 https://github.com/acidanthera/AirportBrcmFixup/
-### CPU Friend (1.2.3):
-https://github.com/acidanthera/CPUFriend/
-### HibernationFixup (1.3.9):
-https://github.com/acidanthera/HibernationFixup/
 ### IntelBluetoothFirmware (1.1.2):
 https://github.com/OpenIntelWireless/IntelBluetoothFirmware
-### Lilu (1.5.0):
+### Lilu (1.5.1):
 https://github.com/acidanthera/Lilu/
 ### NVMeFix (1.0.5):
 https://github.com/acidanthera/NVMeFix
-### RealtekRTL8111 (2.3.0):
+### RealtekRTL8111 (2.4.0):
 https://github.com/Mieze/RTL8111_driver_for_OS_X
 ### USBInjectAll (0.7.1):
 https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads
-### VirtualSMC (1.1.9):
+### VirtualSMC (1.2.1):
 https://github.com/acidanthera/VirtualSMC
-### VoodooInput (1.0.9):
+### VoodooInput (1.1.1):
 https://github.com/acidanthera/VoodooInput
-### VoodooPS2 (2.2.0):
+### VoodooPS2 (2.2.2):
 https://github.com/acidanthera/VoodooPS2
-### WhateverGreen (1.4.6):
+### WhateverGreen (1.4.8):
 https://github.com/acidanthera/WhateverGreen
 ### OpenCanopy's resources:
 https://github.com/acidanthera/OcBinaryData
