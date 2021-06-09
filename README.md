@@ -61,31 +61,31 @@ And then, make a snapshot of config.plist in ProperTree!
 
 ## Credits:
 
-### Airportitlwm (1.2.0):
+### Airportitlwm:
 https://github.com/OpenIntelWireless/itlwm
-### AppleALC (1.5.8):
+### AppleALC:
 https://github.com/acidanthera/AppleALC
 ### Broadcom (Optional, for people who replaced Intel with it):
 https://github.com/acidanthera/BrcmPatchRAM/
 
 https://github.com/acidanthera/AirportBrcmFixup/
-### IntelBluetoothFirmware (1.1.2):
+### IntelBluetoothFirmware:
 https://github.com/OpenIntelWireless/IntelBluetoothFirmware
-### Lilu (1.5.1):
+### Lilu:
 https://github.com/acidanthera/Lilu/
-### NVMeFix (1.0.5):
+### NVMeFix:
 https://github.com/acidanthera/NVMeFix
-### RealtekRTL8111 (2.4.0):
+### RealtekRTL8111:
 https://github.com/Mieze/RTL8111_driver_for_OS_X
-### USBInjectAll (0.7.1):
+### USBInjectAll:
 https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads
-### VirtualSMC (1.2.1):
+### VirtualSMC:
 https://github.com/acidanthera/VirtualSMC
-### VoodooInput (1.1.1):
+### VoodooInput:
 https://github.com/acidanthera/VoodooInput
-### VoodooPS2 (2.2.2):
+### VoodooPS2:
 https://github.com/acidanthera/VoodooPS2
-### WhateverGreen (1.4.8):
+### WhateverGreen:
 https://github.com/acidanthera/WhateverGreen
 ### OpenCanopy's resources:
 https://github.com/acidanthera/OcBinaryData
