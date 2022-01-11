@@ -21,9 +21,6 @@ If you want to switch to RELEASE version, you can use Dortania's Guide here:
 
 https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
 
-My main DELL-7567 fried so won't be able keep up to date this repo anymore,
-planning to get some Haswell machine in future and continue Hackintosh repos soon but well, I don't know how things will go! :)
-
 ### SMBIOS:
 Present in repo SMBIOS is not purchased Apple's device but for own sake, I don't advice you to use it.
 ...for own sake ;)
