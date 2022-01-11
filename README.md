@@ -3,7 +3,7 @@
 ## Hackintosh-OpenCore-HP-ProBook-470-G1
 EFI premade of OpenCore bootloader for HP ProBook 470 G1 is here!
 
-## Current version - OpenCore 0.7.7 (1st March)
+## Current version - OpenCore 0.7.7 (11th January 2022!)
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on HP ProBook 470 G1!
 
@@ -29,10 +29,10 @@ Present in repo SMBIOS is not purchased Apple's device but for own sake, I don't
 ...for own sake ;)
 
 To generate SMBIOS you can use:
-* OpenCore Configurator: 
-https://mackie100projects.altervista.org/download-opencore-configurator/
-* Clover Configurator:
-https://mackie100projects.altervista.org/download-clover-configurator/
+* GenSMBIOS:
+https://github.com/corpnewt/GenSMBIOS
+* OpenCore Auxiliary Tools:
+https://github.com/ic005k/QtOpenCoreConfig
 
 Tool doesn't matter really, you just need not valid or unused SMBIOS to copy-paste needed info.
 ...if you wish to use iServices of course :)
