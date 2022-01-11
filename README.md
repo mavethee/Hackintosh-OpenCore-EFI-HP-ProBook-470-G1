@@ -3,11 +3,11 @@
 ## Hackintosh-OpenCore-HP-ProBook-470-G1
 EFI premade of OpenCore bootloader for HP ProBook 470 G1 is here!
 
-## Current version - OpenCore 0.6.7 (1st March)
+## Current version - OpenCore 0.7.7 (1st March)
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on HP ProBook 470 G1!
 
-https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.7
+https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.7
 
 ## Important note:
 EFI premade is done for people with Intel and Broadcom WiFi Bluetooth cards!
@@ -40,6 +40,7 @@ Tool doesn't matter really, you just need not valid or unused SMBIOS to copy-pas
 ### If you use Intel:
 Delete all Brcm kexts from EFI/OC/Kexts, 
 Depending on macOS version, you're planning to use:
+* Airportitlwm for macOS 12 Monterey and delete rest.
 * Airportitlwm_Big_Sur for macOS 11 Big Sur,
 * Airportitlwm_Catalina for macOS 10.15 Catalina,
 * Airportitlwm_Mojave for macOS 10.14 Mojave,
