@@ -3,11 +3,11 @@
 ## Hackintosh-OpenCore-HP-ProBook-470-G1
 EFI premade of OpenCore bootloader for HP ProBook 470 G1 is here!
 
-## Current version - OpenCore 0.7.8
+## Current version - OpenCore 0.8.1
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on HP ProBook 470 G1!
 
-https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.8
+https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.1
 
 ## Important note:
 EFI premade is done for people with Intel and Broadcom WiFi Bluetooth cards!
