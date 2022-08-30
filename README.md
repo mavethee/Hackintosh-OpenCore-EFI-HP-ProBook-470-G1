@@ -1,13 +1,13 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
 ## Hackintosh-OpenCore-HP-ProBook-470-G1
-EFI premade of OpenCore bootloader for HP ProBook 470 G1 is here!
+EFI premade of OpenCore bootloader for HP ProBook 470 G1 is here and runs Ventura!
 
-## Current version - OpenCore 0.8.1
+## Current version - OpenCore 0.8.3 DEBUG
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on HP ProBook 470 G1!
 
-https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.1
+https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.3
 
 ## Important note:
 EFI premade is done for people with Intel and Broadcom WiFi Bluetooth cards!
@@ -20,6 +20,51 @@ If you are not using NVMe SSDs, you don't need NVMeFix kext, delete it from Kext
 If you want to switch to RELEASE version, you can use Dortania's Guide here:
 
 https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
+
+## Ventura NOTE:
+
+Source: https://github.com/dortania/OpenCore-Legacy-Patcher/issues/998
+
+To run Ventura, grab either `Broadcom/Ventura/EFI` or `Intel/Ventura/EFI` depending on your hardware.
+
+Current issues with Haswell iGPUs running Ventura:
+
+https://github.com/dortania/OpenCore-Legacy-Patcher/issues/998#issuecomment-1222926337
+
+Get OCLP from here: https://github.com/dortania/OpenCore-Legacy-Patcher/actions?query=branch%3Aventura-alpha 
+
+(post-install, branch in development, make sure to download artifacts for latest commit!)
+
+OCLP preparation (already applied, listing to actually teach you something):
+
+1. SET SIP to 0xA03:
+
+`NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> csr-active-config` to `030A0000`
+
+2. Disable Apple Secure Boot:
+
+`Misc -> Security -> SecureBootModel` to `Disable` 
+
+`Misc -> Security -> DmgLoading` to `Any`
+
+3. Disable AMFI (+Fix for Electron apps on 12.3+):
+Add `amfi_get_out_of_my_way=1 ipc_control_port_options=0` to `NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args`
+
+4. Reset NVRAM using `ResetNvramEntry.efi` in `EFI\OC\DRIVERS`
+
+5. (Optional) For auto root patching your unsupported dGPU generate `AutoPkgInstaller.kext` and add it to your `EFI\OC\KEXTS`:
+
+- Launch OCLP,
+
+- Generate EFI for Mac that has something simular to your dGPU,
+
+- Do not install generated EFI anywhere, copy temp location and get the kext!
+
+- Flash config.plist with generated kext, reboot to check if it works.
+
+6. Follow OCLP prompts and reboot.
+
+Done! GPU acceleration in Ventura is working!
 
 ### SMBIOS:
 Present in repo SMBIOS is not purchased Apple's device but for own sake, I don't advice you to use it.
@@ -35,7 +80,7 @@ Tool doesn't matter really, you just need not valid or unused SMBIOS to copy-pas
 ...if you wish to use iServices of course :)
 
 ### If you use Intel:
-Delete all Brcm kexts from EFI/OC/Kexts, 
+Grab EFI from Intel folder in repo!
 Depending on macOS version, you're planning to use:
 * Airportitlwm for macOS 12 Monterey and delete rest.
 * Airportitlwm_Big_Sur for macOS 11 Big Sur,
@@ -46,13 +91,8 @@ After that rename chosen Airportitlwm kext to Airportitlwm.kext
 
 And then make a snapshot of config.plist in ProperTree!
 
-### If you use Broadcom: 
-Delete all Intel kexts from EFI/OC/Kexts
-
-Depending on macOS version, you're planning to use:
-* BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)
-* BrcmPatchRAM2 for 10.11-10.14
-* BrcmPatchRAM for 10.8-10.10
+### If you use Broadcom:
+Grab EFI from Broadcom folder in repo!
 
 And then, make a snapshot of config.plist in ProperTree!
 
