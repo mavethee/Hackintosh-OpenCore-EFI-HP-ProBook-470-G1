@@ -13,7 +13,9 @@ https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.4
 EFI premade is done for people with Intel and Broadcom WiFi Bluetooth cards!
 
 Keep in mind! For for me it's a bit weird I need to mention that. EFI is not everything, to prepare your USB with macOS installer you need to follow Dortania's Guide:
+
 https://dortania.github.io/OpenCore-Install-Guide/installer-guide/#making-the-installer
+
 (3 ways listed using either Windows, Linux or macOS)
 
 If you are not using NVMe SSDs, you don't need NVMeFix kext, delete it from Kexts!
@@ -54,13 +56,7 @@ Add `amfi_get_out_of_my_way=1 ipc_control_port_options=0` to `NVRAM -> Add -> 7C
 
 5. (Optional) For auto root patching your unsupported dGPU generate `AutoPkgInstaller.kext` and add it to your `EFI\OC\KEXTS`:
 
-- Launch OCLP,
-
-- Generate EFI for Mac that has something simular to your dGPU,
-
-- Do not install generated EFI anywhere, copy temp location and get the kext!
-
-- Flash config.plist with generated kext, reboot to check if it works.
+https://github.com/dortania/OpenCore-Legacy-Patcher/blob/ventura-alpha/payloads/Kexts/Acidanthera/AutoPkgInstaller-v1.0.1-DEBUG.zip
 
 6. Follow OCLP prompts and reboot.
 
