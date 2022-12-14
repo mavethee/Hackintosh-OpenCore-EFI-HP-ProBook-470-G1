@@ -3,11 +3,11 @@
 ## Hackintosh-OpenCore-HP-ProBook-470-G1
 EFI premade of OpenCore bootloader for HP ProBook 470 G1 is here and runs Ventura!
 
-## Current version - OpenCore 0.8.4 DEBUG
+## Current version - OpenCore 0.8.7 DEBUG
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on HP ProBook 470 G1!
 
-https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.4
+https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.7
 
 ## Important note:
 EFI premade is done for people with Intel and Broadcom WiFi Bluetooth cards!
@@ -25,23 +25,21 @@ https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
 
 ## Ventura NOTE:
 
-Source: https://github.com/dortania/OpenCore-Legacy-Patcher/issues/998
+Source: https://github.com/dortania/OpenCore-Legacy-Patcher/issues/1008
 
 To run Ventura, grab either `Broadcom/Ventura/EFI` or `Intel/Ventura/EFI` depending on your hardware.
 
 Current issues with Haswell iGPUs running Ventura:
 
-https://github.com/dortania/OpenCore-Legacy-Patcher/issues/998#issuecomment-1222926337
+https://github.com/dortania/OpenCore-Legacy-Patcher/issues/1008
 
-Get OCLP from here: https://github.com/dortania/OpenCore-Legacy-Patcher/actions?query=branch%3Aventura-alpha 
-
-(post-install, branch in development, make sure to download artifacts for latest commit!)
+Get OCLP from here: https://github.com/dortania/OpenCore-Legacy-Patcher/releases
 
 OCLP preparation (already applied, listing to actually teach you something):
 
-1. SET SIP to 0xA03:
+1. SET SIP to 0x803:
 
-`NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> csr-active-config` to `030A0000`
+`NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> csr-active-config` to `03080000`
 
 2. Disable Apple Secure Boot:
 
@@ -56,7 +54,7 @@ Add `amfi_get_out_of_my_way=1 ipc_control_port_options=0` to `NVRAM -> Add -> 7C
 
 5. (Optional) For auto root patching your unsupported dGPU generate `AutoPkgInstaller.kext` and add it to your `EFI\OC\KEXTS`:
 
-https://github.com/dortania/OpenCore-Legacy-Patcher/blob/ventura-alpha/payloads/Kexts/Acidanthera/AutoPkgInstaller-v1.0.1-DEBUG.zip
+https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/AutoPkgInstaller-v1.0.1-DEBUG.zip
 
 6. Follow OCLP prompts and reboot.
 
@@ -68,9 +66,7 @@ Present in repo SMBIOS is not purchased Apple's device but for own sake, I don't
 
 To generate SMBIOS you can use:
 * GenSMBIOS:
-https://github.com/corpnewt/GenSMBIOS
-* OpenCore Auxiliary Tools:
-https://github.com/ic005k/QtOpenCoreConfig
+-   https://github.com/corpnewt/GenSMBIOS
 
 Tool doesn't matter really, you just need not valid or unused SMBIOS to copy-paste needed info.
 ...if you wish to use iServices of course :)
